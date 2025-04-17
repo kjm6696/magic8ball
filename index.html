@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discord Magic 8 Ball</title>
+  <link rel="stylesheet" href="style.css">
+  <audio id="audio" src="assets/make the ground shake sound effect.mp3"></audio>
+</head>
+<body>
+    <h1>Magic 8 Ball</h1>
+    <div class="ballhands">
+        <img class="hands" src="assets/hands.png" alt="Creepy Hands"/>
+        <div class="ball">
+            <img src="assets/8ball.png" alt="Magic 8 Ball"/>
+            <div class="question" style="display: block;">
+                <button class="button" onclick="getAnswer()">Get Answer</button>
+                <button class="newButton" onclick="getNewAnswer()" style="display: none;">Get New Answer</button>
+                <div class="result" id="result">
+                    <img class="responseImg" id="gif" src="" alt="" />
+                </div>
+                <p class="answer" id="answer"></p>
+            </div>  
+        </div>
+    </div>
+    <script src="main.js"></script>
+    </body>
+</html>
